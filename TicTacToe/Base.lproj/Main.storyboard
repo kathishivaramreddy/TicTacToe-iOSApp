@@ -139,6 +139,19 @@
                                 <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1W3-kG-hJD">
+                                <rect key="frame" x="151.5" y="535" width="111" height="32"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="gw2-bZ-hYt"/>
+                                    <constraint firstAttribute="width" constant="111" id="iCg-L3-v3N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <state key="normal" title="Play Again"/>
+                                <connections>
+                                    <action selector="playAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rwA-v6-f6f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -152,6 +165,7 @@
                             <constraint firstItem="aQZ-Ft-2eM" firstAttribute="top" secondItem="YOA-Zn-7pm" secondAttribute="bottom" constant="42" id="Pxa-4G-xMe"/>
                             <constraint firstItem="Ian-XR-gxs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Usc-6M-Oi3"/>
                             <constraint firstItem="aQZ-Ft-2eM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VOU-Bh-Opp"/>
+                            <constraint firstItem="1W3-kG-hJD" firstAttribute="top" secondItem="aQZ-Ft-2eM" secondAttribute="bottom" constant="37" id="Wut-l1-xFN"/>
                             <constraint firstItem="v1I-RL-LKD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d1G-XD-LnH"/>
                             <constraint firstItem="mHw-Uk-Nf4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ea1-9u-uUD"/>
                             <constraint firstItem="Ian-XR-gxs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="icI-WX-bBb"/>
@@ -161,6 +175,7 @@
                             <constraint firstItem="v1I-RL-LKD" firstAttribute="leading" secondItem="Y2M-5Q-WnI" secondAttribute="trailing" constant="37" id="nZt-vp-CPa"/>
                             <constraint firstItem="v1I-RL-LKD" firstAttribute="top" secondItem="aQZ-Ft-2eM" secondAttribute="bottom" constant="37" id="ovV-AF-yc9"/>
                             <constraint firstItem="mHw-Uk-Nf4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oxn-ns-62L"/>
+                            <constraint firstItem="1W3-kG-hJD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vvR-Lj-BAJ"/>
                             <constraint firstItem="aQZ-Ft-2eM" firstAttribute="leading" secondItem="DRk-LA-fb5" secondAttribute="trailing" constant="37" id="xUM-Gf-GVd"/>
                             <constraint firstItem="DRk-LA-fb5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zJo-vB-V1b"/>
                             <constraint firstItem="o6z-XN-Cue" firstAttribute="top" secondItem="DmY-gR-I82" secondAttribute="bottom" constant="37" id="zvt-0o-FaT"/>
@@ -168,6 +183,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="playAgainButton" destination="1W3-kG-hJD" id="eBL-F2-xbJ"/>
                         <outlet property="winnerLabel" destination="mHw-Uk-Nf4" id="vfR-bZ-o0G"/>
                         <outletCollection property="gameButtons" destination="RVq-3E-DSH" collectionClass="NSMutableArray" id="axU-OM-4ls"/>
                         <outletCollection property="gameButtons" destination="YOA-Zn-7pm" collectionClass="NSMutableArray" id="GOL-q3-M6P"/>

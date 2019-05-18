@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var winnerLabel: UILabel!
     
+    @IBOutlet weak var playAgainButton: UIButton!
+    
     @IBAction func gameButtonPressed(_ sender: UIButton) {
         
         let activePostion = sender.tag - 1
@@ -42,6 +44,7 @@ class ViewController: UIViewController {
         
         if !game.activeGame {
             winnerLabel.isHidden = false
+            playAgainButton.isHidden = false
             if let player = result {
                 winnerLabel.text = player == 1 ? "Cross has won" : "Noughts has won"
             }else {
@@ -50,8 +53,21 @@ class ViewController: UIViewController {
         }
     }
     
+    
+    @IBAction func playAgain(_ sender: UIButton) {
+        game.activeGame = true
+        game.activePlayer = 1
+        game.gameState = [0,0,0,0,0,0,0,0,0]
+        winnerLabel.isHidden = true
+        playAgainButton.isHidden = true
+        for buttons in gameButtons {
+            buttons.setImage(nil, for: [])
+        }
+    }
+    
     override func viewDidLoad() {
         winnerLabel.isHidden = true
+        playAgainButton.isHidden = true
     }
     
 }
