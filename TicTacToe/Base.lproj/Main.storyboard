@@ -129,6 +129,16 @@
                                     <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Qb-kz-DGn"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Noughts has won" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="mHw-Uk-Nf4">
+                                <rect key="frame" x="81.5" y="398" width="251" height="100"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="WjX-qN-M0h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
+                                <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -143,12 +153,14 @@
                             <constraint firstItem="Ian-XR-gxs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Usc-6M-Oi3"/>
                             <constraint firstItem="aQZ-Ft-2eM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VOU-Bh-Opp"/>
                             <constraint firstItem="v1I-RL-LKD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d1G-XD-LnH"/>
+                            <constraint firstItem="mHw-Uk-Nf4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ea1-9u-uUD"/>
                             <constraint firstItem="Ian-XR-gxs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="icI-WX-bBb"/>
                             <constraint firstItem="DmY-gR-I82" firstAttribute="leading" secondItem="aQZ-Ft-2eM" secondAttribute="trailing" constant="37" id="j4H-i8-To4"/>
                             <constraint firstItem="DmY-gR-I82" firstAttribute="top" secondItem="Ilw-s5-PnE" secondAttribute="bottom" constant="42" id="jrZ-De-uF4"/>
                             <constraint firstItem="aQZ-Ft-2eM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k60-jF-qR0"/>
                             <constraint firstItem="v1I-RL-LKD" firstAttribute="leading" secondItem="Y2M-5Q-WnI" secondAttribute="trailing" constant="37" id="nZt-vp-CPa"/>
                             <constraint firstItem="v1I-RL-LKD" firstAttribute="top" secondItem="aQZ-Ft-2eM" secondAttribute="bottom" constant="37" id="ovV-AF-yc9"/>
+                            <constraint firstItem="mHw-Uk-Nf4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oxn-ns-62L"/>
                             <constraint firstItem="aQZ-Ft-2eM" firstAttribute="leading" secondItem="DRk-LA-fb5" secondAttribute="trailing" constant="37" id="xUM-Gf-GVd"/>
                             <constraint firstItem="DRk-LA-fb5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zJo-vB-V1b"/>
                             <constraint firstItem="o6z-XN-Cue" firstAttribute="top" secondItem="DmY-gR-I82" secondAttribute="bottom" constant="37" id="zvt-0o-FaT"/>
@@ -156,6 +168,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="winnerLabel" destination="mHw-Uk-Nf4" id="vfR-bZ-o0G"/>
                         <outletCollection property="gameButtons" destination="RVq-3E-DSH" collectionClass="NSMutableArray" id="axU-OM-4ls"/>
                         <outletCollection property="gameButtons" destination="YOA-Zn-7pm" collectionClass="NSMutableArray" id="GOL-q3-M6P"/>
                         <outletCollection property="gameButtons" destination="Ilw-s5-PnE" collectionClass="NSMutableArray" id="V63-RV-3ze"/>
