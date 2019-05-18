@@ -25,7 +25,7 @@
                                     <constraint firstAttribute="height" constant="486" id="NM6-5n-POn"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQZ-Ft-2eM">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQZ-Ft-2eM">
                                 <rect key="frame" x="157" y="398" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="DTt-Xj-dBU"/>
@@ -33,17 +33,21 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="hUr-30-TKL"/>
                                     <constraint firstAttribute="width" constant="100" id="skT-qs-Vhd"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="cross"/>
+                                <connections>
+                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VOH-qK-0I2"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOA-Zn-7pm">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOA-Zn-7pm">
                                 <rect key="frame" x="157" y="256" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="kly-Dq-AHu"/>
                                     <constraint firstAttribute="height" constant="100" id="rw6-hR-IvN"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="cross"/>
+                                <connections>
+                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Sw-X5-cI8"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1I-RL-LKD">
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1I-RL-LKD">
                                 <rect key="frame" x="157" y="535" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="4MR-cb-hYI"/>
@@ -53,9 +57,11 @@
                                     <constraint firstAttribute="width" constant="100" id="piP-km-ryN"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="tD0-WO-QsK"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="cross"/>
+                                <connections>
+                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gkj-8Q-CRh"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DmY-gR-I82">
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DmY-gR-I82">
                                 <rect key="frame" x="294" y="398" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="J5V-Tb-LlN"/>
@@ -65,17 +71,21 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="vcN-Kl-Hz9"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="w5n-7L-8pl"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="cross"/>
+                                <connections>
+                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n50-Rn-YHK"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVq-3E-DSH">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVq-3E-DSH">
                                 <rect key="frame" x="20" y="256" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="pKc-l0-Gjt"/>
                                     <constraint firstAttribute="height" constant="100" id="rfQ-qt-PJB"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="cross"/>
+                                <connections>
+                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nEB-Aa-FiJ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRk-LA-fb5">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRk-LA-fb5">
                                 <rect key="frame" x="20" y="398" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="4q6-if-m2w"/>
@@ -85,31 +95,39 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="pa6-XB-qdX"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="vv9-Mj-E2C"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="cross"/>
+                                <connections>
+                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kdG-Jy-fX5"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2M-5Q-WnI">
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2M-5Q-WnI">
                                 <rect key="frame" x="20" y="535" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="59M-zW-Vdf"/>
                                     <constraint firstAttribute="height" constant="100" id="VKX-lR-57V"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="cross"/>
+                                <connections>
+                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OAY-AM-J4n"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ilw-s5-PnE">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ilw-s5-PnE">
                                 <rect key="frame" x="294" y="256" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="tfZ-HC-GGH"/>
                                     <constraint firstAttribute="width" constant="100" id="xPV-BP-etR"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="cross"/>
+                                <connections>
+                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="peY-5Q-YfG"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6z-XN-Cue">
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6z-XN-Cue">
                                 <rect key="frame" x="294" y="535" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Ler-gW-v3l"/>
                                     <constraint firstAttribute="height" constant="100" id="hsj-AX-IJA"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="cross"/>
+                                <connections>
+                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Qb-kz-DGn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -137,6 +155,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outletCollection property="gameButtons" destination="RVq-3E-DSH" collectionClass="NSMutableArray" id="axU-OM-4ls"/>
+                        <outletCollection property="gameButtons" destination="YOA-Zn-7pm" collectionClass="NSMutableArray" id="GOL-q3-M6P"/>
+                        <outletCollection property="gameButtons" destination="Ilw-s5-PnE" collectionClass="NSMutableArray" id="V63-RV-3ze"/>
+                        <outletCollection property="gameButtons" destination="DRk-LA-fb5" collectionClass="NSMutableArray" id="XIQ-nS-Sea"/>
+                        <outletCollection property="gameButtons" destination="aQZ-Ft-2eM" collectionClass="NSMutableArray" id="1TL-XT-EYT"/>
+                        <outletCollection property="gameButtons" destination="DmY-gR-I82" collectionClass="NSMutableArray" id="j5S-ZI-DKx"/>
+                        <outletCollection property="gameButtons" destination="Y2M-5Q-WnI" collectionClass="NSMutableArray" id="5FV-fY-Qr1"/>
+                        <outletCollection property="gameButtons" destination="v1I-RL-LKD" collectionClass="NSMutableArray" id="Tux-A4-Bea"/>
+                        <outletCollection property="gameButtons" destination="o6z-XN-Cue" collectionClass="NSMutableArray" id="me7-6L-Ad6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -145,6 +174,5 @@
     </scenes>
     <resources>
         <image name="board" width="744" height="783"/>
-        <image name="cross" width="214" height="214"/>
     </resources>
 </document>
